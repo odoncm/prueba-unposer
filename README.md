@@ -1,1 +1,31 @@
 # prueba-unposer
+
+Prueba de uno dentro del README
+
+```YAML
+services:
+  check-torrents-client:
+    image: unraiders/check-torrents-client
+    container_name: check-torrents-client
+    restart: unless-stopped
+    environment:
+        - TORRENT_CLIENT=
+        - TORRENT_CLIENT_HOST=
+        - TORRENT_CLIENT_PORT=
+        - TORRENT_CLIENT_USER=
+        - TORRENT_CLIENT_PASSWORD=
+        - CLIENTE_NOTIFICACION=
+        - TELEGRAM_BOT_TOKEN=
+        - TELEGRAM_CHAT_ID=
+        - DISCORD_WEBHOOK=
+        - PAUSADO=1
+        - NO_TRACKER=1
+        - MISSING_FILES=1
+        - NOMBRE=1
+        - RESUMEN=1
+        - RESUMEN_TRACKERS=1
+        - INSTANCIA=
+        - CRON=0 7 * * *
+        - DEBUG=0
+        - TZ=Europe/Madrid
+```
